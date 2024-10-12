@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <header className="hidden lg:flex justify-between items-center py-5 sticky top-0 bg-white">
+      <header className="hidden lg:flex justify-between items-center py-5 sticky top-0 z-50 bg-white">
         <div>
           <img src={logo} alt="blueprint-logo" width={110} />
           <p className="text-[10px] text-quaternary">Mentorship</p>
