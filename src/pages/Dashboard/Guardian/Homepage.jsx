@@ -7,7 +7,7 @@ import photo6 from "../../../assets/images/photo7.jpeg";
 
 const Homepage = () => {
   return (
-    <main className="mx-2 my-4 w-[75%]">
+    <main className="mx-2 my-4 md:w-[75%]">
       <header className="py-4">
         <h1 className="text-xl">
           Welcome, <b>James Olushola</b>
