@@ -75,7 +75,7 @@ const Sidebar = ({
       </div>
 
       {/* Mobile Menu */}
-      <section className="fixed bottom-0 flex items-center bg-white w-full justify-evenly py-2 md:hidden">
+      <section className="fixed bottom-0 flex items-center bg-white w-full justify-evenly py-2 md:hidden z-50">
         <Link to={link1} className="flex flex-col items-center">
           <img src={home} alt="" />
           <p className="text-sm text-gray-800 hover:text-primary focus:text-primary">
