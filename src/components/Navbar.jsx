@@ -17,10 +17,13 @@ const Navbar = () => {
           <p className="text-[10px] text-quaternary">Mentorship</p>
         </div>
         <div className="flex items-center text-sm">
-          <div className="flex items-center justify-between bg-tertiary px-3 py-2 mr-3 text-secondary font-bold">
+          <Link
+            to={"/"}
+            className="flex items-center justify-between bg-tertiary px-3 py-2 mr-3 text-secondary font-bold"
+          >
             <p>Mentorship</p>
             <IoChevronDownOutline />
-          </div>
+          </Link>
           <div className="h-8 w-[2px] bg-gray-500 mr-3 "></div>
           <div className=" flex items-center text-quaternary px-2 py-2 mr-3">
             <MdOutlinePhoneInTalk className="px-1 text-2xl" />
@@ -71,7 +74,7 @@ const Navbar = () => {
       >
         <div className=" text-sm">
           <div className="flex items-center justify-between bg-tertiary px-3 py-2 mr-3 text-secondary font-bold mt-3">
-            <p>Mentorship</p>
+            <Link to={"/"}>Mentorship</Link>
             <IoChevronDownOutline />
           </div>
           <div className=" flex items-center text-quaternary px-2 py-2 mr-3">
