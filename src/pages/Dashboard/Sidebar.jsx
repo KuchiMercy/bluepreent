@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import home from "../../assets/icons/Home.png";
 import user from "../../assets/icons/user.png";
 import addUser from "../../assets/icons/AddUser.png";
@@ -13,11 +13,10 @@ const Sidebar = ({
   link2,
   link3,
   link4,
-  link5,
+
   linkName,
   profile,
 }) => {
-  const navigate = useNavigate();
   return (
     <>
       {/* Desktop Menu */}
