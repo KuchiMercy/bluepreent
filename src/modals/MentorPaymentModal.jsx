@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 import MentorAddWardModal from "./MentorAddWardModal";
 
-
 const MentorPaymentModal = ({ isOpen, onClose, onPaymentSuccess }) => {
   const [isAddWardModalOpen, setIsAddWardModalOpen] = useState(false);
   const [wards, setWards] = useState([]);
@@ -63,7 +62,7 @@ const MentorPaymentModal = ({ isOpen, onClose, onPaymentSuccess }) => {
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div
         onClick={onClose}
-        className="absolute inset-0  bg-black opacity-50"
+        className="absolute inset-0 bg-black opacity-50 "
       ></div>
       <div className="bg-white shadow-lg rounded-lg w-3/4  md:w-[40%] h-auto z-10 p-6 relative md:ml-14">
         <button

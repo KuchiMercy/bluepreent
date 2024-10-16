@@ -66,6 +66,9 @@ const GuardianLogin = () => {
     e.preventDefault();
 
     if (validateForm()) {
+      const mockAuthToken = "auth-token";
+      localStorage.setItem("authToken", mockAuthToken);
+      //
       setShowAnimation(true);
       console.log("Login Successful:", formData);
       setTimeout(() => {

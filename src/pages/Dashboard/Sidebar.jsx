@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import home from "../../assets/icons/Home.png";
 import user from "../../assets/icons/user.png";
 import addUser from "../../assets/icons/AddUser.png";
@@ -17,6 +17,7 @@ const Sidebar = ({
   linkName,
   profile,
 }) => {
+  const navigate = useNavigate();
   return (
     <>
       {/* Desktop Menu */}
@@ -69,7 +70,7 @@ const Sidebar = ({
             <img src={setting} alt="" /> <Link to={link4}>Settings</Link>
           </div>
           <div className="flex items-center py-3 gap-2">
-            <img src={logout} alt="" /> <Link to={link5}>Log Out</Link>
+            <img src={logout} alt="" /> <Link to={"/"}>Log Out</Link>
           </div>
         </section>
       </div>

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,6 +27,7 @@ import Wardspage from "./pages/Dashboard/Guardian/Wardspage";
 import Mentorspage from "./pages/Dashboard/Guardian/Mentorspage";
 import Settingspage from "./pages/Dashboard/Guardian/Settingspage";
 import NotFound from "./pages/NotFound";
+import PrivateRoute from "./components/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -81,10 +82,12 @@ const router = createBrowserRouter([
   {
     path: "/guardian-dashboard",
     element: (
-      <GuardianDashboardLayout>
-        <ScrollRestoration />
-        <Outlet />
-      </GuardianDashboardLayout>
+      <PrivateRoute>
+        <GuardianDashboardLayout>
+          <ScrollRestoration />
+          <Outlet />
+        </GuardianDashboardLayout>
+      </PrivateRoute>
     ),
     errorElement: <NotFound />,
     children: [
@@ -97,10 +100,12 @@ const router = createBrowserRouter([
   {
     path: "/mentor-dashboard",
     element: (
-      <MentorDashboardLayout>
-        <ScrollRestoration />
-        <Outlet />
-      </MentorDashboardLayout>
+      <PrivateRoute>
+        <MentorDashboardLayout>
+          <ScrollRestoration />
+          <Outlet />
+        </MentorDashboardLayout>
+      </PrivateRoute>
     ),
     errorElement: <NotFound />,
     children: [

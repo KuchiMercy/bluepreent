@@ -9,10 +9,10 @@ const Mentors = () => {
 
   return (
     <>
-      <header className="text-center py-10 ">
+      <header className="text-center my-10 ">
         <h1 className="text-[36px] font-semibold">
           Take a Look at our{" "}
-          <span style={{}} className="text-primary">
+          <span className="text-primary">
             Mentors
           </span>
         </h1>
